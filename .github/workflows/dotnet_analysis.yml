@@ -24,9 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run .NET Code Analysis
-          uses: dotnet/code-analysis@v1
-          id: code-analysis
-          with:
-            solution: UT4MasterServer.sln
-            build-breaking: true
-            all-categories: all
+        uses: dotnet/code-analysis@v1
+        id: code-analysis
+        with:
+          solution: UT4MasterServer.sln
+          build-breaking: true
+          all-categories: all
